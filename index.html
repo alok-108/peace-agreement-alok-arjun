@@ -2,81 +2,152 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>Peace Treaty - Alok Pandey & Arjun Tiwari</title>
+    <title>Peace Treaty - Alok & Arjun</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f2f2f2;
-            color: #333;
+            background: #e9ecef;
             padding: 30px;
         }
         .container {
             background: #fff;
             padding: 25px;
             border-radius: 10px;
-            max-width: 700px;
+            max-width: 800px;
             margin: auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
         }
         h1, h2 {
             text-align: center;
-            color: #222;
-        }
-        .clause {
-            margin: 15px 0;
-            line-height: 1.6;
         }
         .insta-link {
             display: flex;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 15px;
         }
         .insta-link img {
             width: 24px;
-            height: 24px;
             margin-right: 10px;
         }
-        .signature-block {
-            margin-top: 40px;
+        .clause {
+            margin: 10px 0;
         }
-        .signature {
+        .sign-area {
             margin-top: 30px;
         }
-        .signature span {
-            display: inline-block;
-            width: 48%;
+        .sign-block {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+        button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .signed-info {
+            margin-top: 15px;
+            color: green;
+            font-weight: bold;
+        }
+        .download-btn {
+            background: #007bff;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>शांति समझौता</h1>
-        <h2>अलोक पांडेय और अर्जुन तिवारी के बीच</h2>
+<div class="container" id="treaty-content">
+    <h1>शांति समझौता</h1>
+    <h2>अलोक पांडेय और अर्जुन तिवारी के बीच</h2>
 
-        <div class="insta-link">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-            <a href="https://www.instagram.com/alokpandey.ai/" target="_blank">@alokpandey.ai</a>
+    <div class="insta-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        <a href="https://www.instagram.com/alokpandey.ai/" target="_blank">@alokpandey.ai</a>
+    </div>
+    <div class="insta-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        <a href="https://www.instagram.com/schizoaryan/" target="_blank">@schizoaryan</a>
+    </div>
+
+    <hr>
+
+    <div class="clause">1. अर्जुन तिवारी, अलोक पांडेय को कभी भी गाली नहीं देंगे।</div>
+    <div class="clause">2. अर्जुन तिवारी, अलोक पांडेय को सम्मानपूर्वक "भैया" कहकर बुलाएंगे।</div>
+    <div class="clause">3. अलोक पांडेय, अर्जुन तिवारी की कोई भी फोटो लीक नहीं करेंगे, ना ही उन्हें मॉर्फ या एडिट करके नुकसान पहुँचाएंगे।</div>
+    <div class="clause">4. अलोक पांडेय, अर्जुन तिवारी को भी कभी गाली नहीं देंगे।</div>
+    <div class="clause">5. दोनों पक्ष एक-दूसरे की इज्जत करेंगे और सम्मानजनक भाषा का उपयोग करेंगे।</div>
+
+    <div class="sign-area">
+        <div class="sign-block">
+            <label>Alok Pandey का नाम दर्ज करें:</label>
+            <input type="text" id="alokName" placeholder="Alok Pandey">
+            <button onclick="signTreaty('alok')">Agree</button>
+            <div id="alokSigned" class="signed-info"></div>
         </div>
-        <div class="insta-link">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-            <a href="https://www.instagram.com/schizoaryan/" target="_blank">@schizoaryan</a>
-        </div>
-
-        <hr>
-
-        <div class="clause">1. अर्जुन तिवारी, अलोक पांडेय को कभी भी गाली नहीं देंगे।</div>
-        <div class="clause">2. अर्जुन तिवारी, अलोक पांडेय को सम्मानपूर्वक "भैया" कहकर बुलाएंगे।</div>
-        <div class="clause">3. अलोक पांडेय, अर्जुन तिवारी की कोई भी फोटो लीक नहीं करेंगे, ना ही उन्हें मॉर्फ या एडिट करके नुकसान पहुँचाएंगे।</div>
-        <div class="clause">4. अलोक पांडेय, अर्जुन तिवारी को भी कभी गाली नहीं देंगे।</div>
-        <div class="clause">5. दोनों पक्ष एक-दूसरे की इज्जत करेंगे और सम्मानजनक भाषा का उपयोग करेंगे।</div>
-
-        <div class="signature-block">
-            <div class="signature">
-                <span><strong>हस्ताक्षर: ___________________</strong><br>अलोक पांडेय</span>
-                <span><strong>हस्ताक्षर: ___________________</strong><br>अर्जुन तिवारी</span>
-            </div>
-            <p style="text-align:center; margin-top:20px;">तारीख: _________</p>
+        <div class="sign-block">
+            <label>Arjun Tiwari का नाम दर्ज करें:</label>
+            <input type="text" id="arjunName" placeholder="Arjun Tiwari">
+            <button onclick="signTreaty('arjun')">Agree</button>
+            <div id="arjunSigned" class="signed-info"></div>
         </div>
     </div>
+
+    <button class="download-btn" onclick="downloadPDF()">Download Peace Treaty PDF</button>
+</div>
+
+<script>
+    let alokSigned = false;
+    let arjunSigned = false;
+
+    async function getIP() {
+        const res = await fetch('https://api.ipify.org?format=json');
+        const data = await res.json();
+        return data.ip;
+    }
+
+    async function signTreaty(who) {
+        const name = document.getElementById(who + "Name").value.trim();
+        if (!name) {
+            alert("कृपया नाम दर्ज करें!");
+            return;
+        }
+
+        const ip = await getIP();
+        const time = new Date().toLocaleString();
+        const message = `${name} ✅ Signed on ${time} — Issued by IP: ${ip}`;
+
+        document.getElementById(who + "Signed").innerText = message;
+
+        if (who === "alok") alokSigned = true;
+        if (who === "arjun") arjunSigned = true;
+    }
+
+    function downloadPDF() {
+        if (!alokSigned || !arjunSigned) {
+            alert("कृपया पहले दोनों पक्ष समझौते पर Agree करें।");
+            return;
+        }
+
+        const element = document.getElementById("treaty-content");
+        html2pdf().from(element).save("Peace_Treaty_Alok_Arjun.pdf");
+    }
+</script>
+
+<!-- html2pdf CDN -->
+<script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+
 </body>
 </html>
